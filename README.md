@@ -73,20 +73,25 @@ Ao proteger constelações de satélites comerciais e científicos contra impact
 2.  Crie uma base de dados vazia chamada exatamente: kesslervision.
     
 3.  Properties:
+   ```text
     spring.datasource.url=jdbc:postgresql://localhost:5432/kesslervision
     spring.datasource.username=postgres
     spring.datasource.password=SUA\_SENHA\_AQUI
-    
+   ```
 
 ### 2\. Inicialização do Motor Físico (Python)
 
 Abra o terminal na pasta onde o arquivo kessler\_vision.py está localizado e execute:
 
 ### Instalar os módulos web necessários
+```text
 pip install fastapi uvicorn requests
+```
 
 ### Executar o microserviço
+```text
 python kessler_vision.py
+```
 
 O console exibirá o download da base CelesTrak em memória e informará que o servidor está online na porta **8000**.
 
