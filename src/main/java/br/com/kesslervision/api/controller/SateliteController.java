@@ -1,7 +1,8 @@
 package br.com.kesslervision.api.controller;
 
 import br.com.kesslervision.api.model.Satelite;
-import br.com.kesslervision.api.repository.SateliteRepository;
+import br.com.kesslervision.api.service.SateliteService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,19 +12,26 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 public class SateliteController {
 
-    private final SateliteRepository repository;
+    private final SateliteService service; 
 
-    public SateliteController(SateliteRepository repository) {
-        this.repository = repository;
+    public SateliteController(SateliteService service) {
+        this.service = service;
     }
 
     @PostMapping
-    public Satelite cadastrar(@RequestBody Satelite satelite) {
-        return repository.save(satelite);
+    public ResponseEntity<?> cadastrar(@RequestBody Satelite satelite) {
+        try {
+            // Service faz as validações
+            Satelite sateliteSalvo = service.cadastrarSatelite(satelite);
+            return ResponseEntity.ok(sateliteSalvo);
+        } catch (IllegalArgumentException e) {
+            // Se o Service atirar um erro (ex: NORAD duplicado), devolve um erro 400 (Bad Request)
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
     @GetMapping
     public List<Satelite> listar() {
-        return repository.findAll();
+        return service.listarTodos();
     }
 }
