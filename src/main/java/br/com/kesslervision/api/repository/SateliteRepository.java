@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SateliteRepository extends JpaRepository<Satelite, Long> {
-    
+    // O Spring Boot cria a query (SELECT count(*) WHERE cd_norad = ?) automaticamente só de ler o nome do método!
+    boolean existsByCdNorad(Integer cdNorad);
 }
