@@ -115,15 +115,15 @@ O fluxo completo de microserviços (Java -> DB -> Python FastAPI -> Algoritmo de
 👥 Integrantes do Grupo
 -----------------------
 
-*   **\[Caio Nascimento Battista]** - RM: \[XXXXX\]
+*   **\[Caio Nascimento Battista]** - RM: \[561383]
     
-*   **\[Lucas Cavalcante]** - RM: \[XXXXX\]
+*   **\[Lucas Cavalcante]** - RM: \[562857]
     
-*   **\[Matheus Rodrigues]** - RM: \[XXXXX\]
+*   **\[Matheus Rodrigues]** - RM: \[561689]
     
-*   **\[Manoah Leão]** - RM: \[XXXXX\]
+*   **\[Manoah Leão]** - RM: \[563713]
     
-*   **\[Jean Pierre]** - RM: \[XXXXX\]
+*   **\[Jean Pierre]** - RM: \[566534]
     
 
 📺 Demonstração em Vídeo
