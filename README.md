@@ -63,6 +63,9 @@ Ao proteger constelações de satélites comerciais e científicos contra impact
 *   Python 3.10 ou superior instalado.
     
 *   PostgreSQL rodando localmente.
+  
+*   Instancie o Front-end localmente: 
+    https://github.com/Luqetaa/kessler-vision-ui.git
 
 --- 
 
