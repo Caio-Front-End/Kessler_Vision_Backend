@@ -131,6 +131,6 @@ O fluxo completo de microserviços (Java -> DB -> Python FastAPI -> Algoritmo de
 
 O vídeo completo com a explicação da arquitetura, defesa do problema escolhido e a execução prática da API funcionando de ponta a ponta pode ser assistido no link abaixo:
 
-🔗 [**Clique aqui para assistir ao vídeo do projeto no YouTube**](https://www.youtube.com/)
+🔗 [**Clique aqui para assistir ao vídeo do projeto no YouTube**]([https://www.youtube.com/](https://youtu.be/UtyQfMzZGGQ))
 
 _Desenvolvido como projeto acadêmico para avaliação corporativa e técnica._
